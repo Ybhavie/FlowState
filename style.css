@@ -544,3 +544,101 @@ body:hover #cursor-glow {
   .stat-number { font-size: 1.6rem; }
   .header-meta { display: none; }
 }
+
+/* --- RESPONSIVE DESIGN (Mobile Optimization) --- */
+
+@media (max-width: 640px) {
+    .app-wrapper {
+        padding: 12px 12px 30px; /* Reduced padding for more screen real estate */
+        gap: 10px;
+    }
+
+    /* 1. Header & Brand */
+    .brand-name {
+        font-size: 1.1rem; /* Slightly smaller to prevent crowding */
+    }
+    
+    .date-badge {
+        font-size: 0.7rem;
+        padding: 4px 10px;
+    }
+
+    /* 2. Stats Dashboard */
+    .stats-row {
+        gap: 8px; /* Tighter gaps for small screens */
+    }
+    
+    .stat-card {
+        padding: 12px 8px;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    /* 3. The Input Row (The most important part) */
+    .input-row {
+        flex-direction: column; /* Stack elements for better thumb reach */
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .input-wrapper {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .priority-select {
+        min-width: 80px;
+        font-size: 0.75rem;
+        padding: 11px 6px; /* Match height of input */
+    }
+
+    .add-btn {
+        width: 100%; /* Full width button is easier to tap on mobile */
+        justify-content: center;
+        padding: 14px;
+    }
+
+    /* 4. Filter Tabs */
+    .tab-btn {
+        font-size: 0.75rem;
+        padding: 10px 5px;
+    }
+
+    /* 5. Task Items */
+    .task-item {
+        padding: 12px;
+    }
+
+    .task-text {
+        font-size: 0.85rem;
+    }
+
+    .priority-tag {
+        font-size: 0.55rem;
+        padding: 1px 6px;
+    }
+
+    /* Hide unnecessary elements on mobile to keep it clean */
+    .header-meta {
+        display: block; /* Keep the date, but we could hide it if it overlaps */
+    }
+    
+    /* Ensure the "Torch" glow isn't too distracting on touch screens */
+    #cursor-glow {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Extra small phones (iPhone SE, etc.) */
+@media (max-width: 360px) {
+    .stat-label {
+        font-size: 0.6rem;
+    }
+    .brand-icon {
+        width: 32px;
+        height: 32px;
+    }
+}
