@@ -23,12 +23,6 @@ CSS3: Custom properties (CSS Variables), Flexbox, and hardware-accelerated anima
 JavaScript (ES6+): Advanced DOM manipulation, JSON serialization, and Event Delegation.
 
 Deployment
-Clone the repository:
-
-Bash
-git clone https://github.com/YOUR_USERNAME/FlowState.git
-Open index.html in any modern web browser to experience the flow.
-
-
+## 🔗 Live Demo: [Visit FlowState](https://flow-state-snowy.vercel.app/)
 
 Developed with ❤️ by Vaibhavi
